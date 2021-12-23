@@ -6,13 +6,7 @@ import nodemailer from 'nodemailer'
 import { authSchema } from '../helpers/validator'
 
 
-const transporter = nodemailer.createTransport({
-    service: "gmail", 
-    auth : {
-        user: "korathop@gmail.com",
-        pass: 'Pranesh@321'
-    }
-})
+
          
 /**Create an User with Joi validation and with mongoose  */
 exports.signup = async (req,res,next)=>{
